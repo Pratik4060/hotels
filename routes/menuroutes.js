@@ -3,11 +3,7 @@ const router = express.Router()
 const MenuItem = require('../models/menu')
 
 
-router.get('/', function(req,res){
-    res.send("welcome to hotel")
-})
-
-        app.post('/', async(req,res)=>{
+        router.post('/', async(req,res)=>{
             try{
                 const data =  req.body
                 const newMenu = new MenuItem(data)
